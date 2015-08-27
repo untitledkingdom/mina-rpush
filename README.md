@@ -18,13 +18,11 @@ require 'mina/rpush'
 
 task deploy: :environment do
   deploy do
-    invoke 'rpush:stop'
-    invoke 'git:clone'
     ...
 
     to :launch do
       ...
-      invoke 'rpush:start'
+      invoke 'rpush:restart'
     end
   end
 end
