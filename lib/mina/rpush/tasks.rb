@@ -5,19 +5,19 @@ namespace :rpush do
 
   desc 'Start rpush'
   task start: :environment do
-    queue %[echo '-----> Start rpush']
+    queue %[echo '-----> Starting rpush']
     queue! "#{rpush_command} start -e #{rails_env}"
   end
 
   desc 'Stop rpush'
   task stop: :environment do
-    queue %[echo '-----> Start rpush']
+    queue %[echo '-----> Stopping rpush']
     queue! "#{rpush_command} stop -e #{rails_env}"
   end
 
   desc 'Restart rpush'
   task restart: :environment do
-    queue %[echo '-----> Start rpush']
+    queue %[echo '-----> Restarting rpush']
     queue! "#{rpush_command} stop -e #{rails_env}; #{rpush_command} start -e #{rails_env}"
   end
 
