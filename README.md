@@ -20,7 +20,7 @@ task deploy: :environment do
   deploy do
     ...
 
-    to :launch do
+    on :launch do
       ...
       invoke 'rpush:restart'
     end
