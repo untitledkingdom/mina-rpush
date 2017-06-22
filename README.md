@@ -2,6 +2,8 @@
 
 Mina tasks for [rpush](https://github.com/rpush/rpush) deployment.
 
+This version of gem is compatible with Mina 1.x, [check out older version for 0.3 support](https://github.com/d4rky-pl/mina-rpush/tree/mina-0.3)
+
 ## Installation
 
 ```ruby
